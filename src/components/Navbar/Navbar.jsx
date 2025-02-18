@@ -9,13 +9,16 @@ function Navbar() {
   return (
     <nav>
       <div className="left">
-        <a href="/" className="logo">
+
+        <Link to="/" className="logo">
           <img src="/logo.png" alt="LamaEstate" />
           <span>LamaEstate</span>
-        </a>
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
+        </Link>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="">Contact</Link>
+        <Link to=""></Link>
+
         <a href="/">Agents</a>
       </div>
       <div className="right">
