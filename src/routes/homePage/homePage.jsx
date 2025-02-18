@@ -3,10 +3,11 @@ import SearchBar from "../../components/searchBar/searchBar";
 
 function HomePage() {
   return (
+    <>
     <div className="homePage">
       <div className="textContainer">
         <div className="wrapper">
-          <h1 className="title">Find Real Estate & Get Your Dream Place</h1>
+          <h1 className="title ">Find Real Estate & Get Your Dream Place</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -37,6 +38,11 @@ function HomePage() {
         <img src="/bg.png" alt="" />
       </div>
     </div>
+    
+    <div className="h-[100vh] w-[100vw]">
+dfdfdf
+    </div>
+    </>
   );
 }
 

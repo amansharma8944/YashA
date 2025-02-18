@@ -14,7 +14,7 @@ function Navbar() {
           <img src="/logo.png" alt="LamaEstate" />
           <span>LamaEstate</span>
         </Link>
-        <Link to="/">Home</Link>
+        <Link to="/" className="text-[red]">Home</Link>
         <Link to="/about">About</Link>
         <Link to="">Contact</Link>
         <Link to=""></Link>
@@ -29,8 +29,8 @@ function Navbar() {
               alt=""
             />
             <span>John Dog</span>
-            <Link to="/profile" className="profile">
-              <div className="notification">3</div>
+            <Link to="/profile" className="profile ">
+              <div className="notification ">3</div>
               <span>Profile</span>
             </Link>
           </div>
@@ -48,17 +48,24 @@ function Navbar() {
             alt=""
             onClick={() => {
               setOpen((preVal) => !preVal);
+              console.log(open)
             }}
           />
         </div>
-        <div className={open ? "menu active" : "menu"}>
-          <a href="/">Home</a>
+        {
+        open &&
+        <div className={`   
+          // ${open ? "menu active" : "menu"}
+        
+        
+        `  }>
+          <a href="/" >Home</a>
           <a href="/">About</a>
           <a href="/">Contact</a>
           <a href="/">Agents</a>
           <a href="/">Sign in</a>
           <a href="/">Sign up</a>
-        </div>
+        </div>}
       </div>
     </nav>
   );
