@@ -55,7 +55,7 @@ function Navbar() {
         {
         open &&
         <div className={`   
-          // ${open ? "menu active" : "menu"}
+          ${open ? "menu active" : "menu"}
         
         
         `  }>
